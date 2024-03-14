@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CarDetails = ({brand, km, color}) => {
+const CarDetails = ({brand, km, color, newCar}) => {
 
     
   return (
@@ -11,6 +11,7 @@ const CarDetails = ({brand, km, color}) => {
             <li>KM: {km}</li>
             <li>Cor: {color}</li>
         </ul>
+        {newCar && <p>Este carro é novo!</p>}
     </div>
   )
 }
